@@ -13,15 +13,13 @@ def get_optimal_planting_time(plant):
     planting_times = {
         "tomato": "April to June",
         "cucumber": "May to July",
-        "lettuce": "March to August"
+        "lettuce": "March to August",
+        "maize": "October to February"
     }
     
     # TODO: Add error handling for unknown plants
     return planting_times.get(plant.lower(), "Unknown plant type. Please try again.")
 
-# TODO: Add more plants to the planting_times dictionary
-
-# TODO: Consider replacing hardcoded values with a config file
 
 if __name__ == "__main__":
     main()
